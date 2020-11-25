@@ -1,5 +1,7 @@
 package com.company;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -7,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FileAnalyzerTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testReadFileIntoString() throws IOException {
         //when
         File file = new File("C:\\Users\\1\\Desktop\\test.txt");
@@ -16,7 +18,7 @@ class FileAnalyzerTest {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testGetSentencesWithInstances() {
         //when
         String sample = "duck";
@@ -25,7 +27,7 @@ class FileAnalyzerTest {
         assertEquals("No duck!", FileAnalyzer.getSentencesWithInstances(fileContent, sample)[0]);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testGetAmountOfInstances() {
         //when
         String sample = "duck";
@@ -34,12 +36,12 @@ class FileAnalyzerTest {
         assertEquals(1, FileAnalyzer.getAmountOfInstances(fileContent, sample));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testPrintAmountOfInstances() {
 
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testPrintEverySentenceWithInstance() {
     }
 }

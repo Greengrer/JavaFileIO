@@ -29,8 +29,8 @@ public class FileAnalyzer {
             int fileLength = (int) fileToRead.length();
             char[] fileContent = new char[fileLength];
             fileReader.read(fileContent, 0, fileLength);
-        System.out.println(fileContent);
-            return String.valueOf(fileContent);
+            System.out.println(fileContent);
+            return String.valueOf(fileContent).trim();
 
     }
 

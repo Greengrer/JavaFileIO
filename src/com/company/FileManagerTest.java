@@ -9,15 +9,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FileManagerTest {
 
-    String invalidPath = "NotAPath";
-    String pathToFile = "C:\\Users\\1\\Desktop\\test.txt";
-    String pathToEmptyDir = "C:\\Users\\1\\Desktop\\EmptyTestDir";
-    String pathToDir = "C:\\Users\\1\\Desktop\\TestDir";
-    String fromDir = "C:\\Users\\1\\Desktop\\Source";
-    String fromFile = pathToFile;
-    String fromEmptyDir = "C:\\Users\\1\\Desktop\\EmptyTestDir";
-    String toDir = "C:\\Users\\1\\Desktop\\Destination";
-    String toFile = pathToFile;
+    private String invalidPath = "NotAPath";
+    private String pathToFile = "C:\\Users\\1\\Desktop\\test.txt";
+    private String pathToEmptyDir = "C:\\Users\\1\\Desktop\\EmptyTestDir";
+    private String pathToDir = "C:\\Users\\1\\Desktop\\TestDir";
+    private String fromDir = "C:\\Users\\1\\Desktop\\Source";
+    private String fromFile = pathToFile;
+    private String fromEmptyDir = "C:\\Users\\1\\Desktop\\EmptyTestDir";
+    private String toDir = "C:\\Users\\1\\Desktop\\Destination";
+    private String toFile = pathToFile;
 
 
 
